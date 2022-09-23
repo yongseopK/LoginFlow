@@ -29,11 +29,30 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.title = "로그인"
+        print("LoginViewController 객체의 뷰가 메모리에 로드됨")
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        print("LoginViewController 객체의 뷰가 나타날 예정")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("LoginViewController 객체의 뷰가 나타남")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("LoginViewController 객체의 뷰가 사라질 예정")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("LoginViewController 객체의 뷰가 사라짐")
     }
     
     private func showAlert(message: String, control toBeFirstResponder: UIControl?) {
@@ -72,6 +91,8 @@ class LoginViewController: UIViewController {
         guard let infoViewController = segue.destination as? InfoViewController else {
             return
         }
+        
+        infoViewController.loginInfo = LoginInfo(email: email, password: passowrd)
     }
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NmT-1L-gGl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -53,7 +53,7 @@
                     <connections>
                         <outlet property="emailField" destination="NRA-Z8-rx1" id="WRB-4K-jig"/>
                         <outlet property="passwordField" destination="HuT-U9-stp" id="Tuj-Tx-vUz"/>
-                        <segue destination="kft-mt-h5Y" kind="show" identifier="ShowInfo" id="W3U-SN-3R5"/>
+                        <segue destination="kft-mt-h5Y" kind="show" identifier="ShowInfo" id="hkF-5F-7hl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -63,7 +63,7 @@
         <!--Info View Controller-->
         <scene sceneID="AH0-F0-sD0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="kft-mt-h5Y" customClass="InfoViewController" customModule="LoginFlow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kft-mt-h5Y" customClass="InfoViewController" customModule="LoginFlow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ao-V6-EzE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5R-Gc-AjD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-475" y="84"/>
+            <point key="canvasLocation" x="138" y="84"/>
         </scene>
     </scenes>
     <resources>
